@@ -21,4 +21,9 @@ class AgenziaController extends Controller
         $agenzie = Agenzia::with('pacchetti')->get();
         return response()->json($agenzie);
     }
+    public function listAll(Request $request) {
+        //Operazione di SELECT su DB
+        $agenzie = Agenzia::get();
+        return response()->json($agenzie);
+    }
 }

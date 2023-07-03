@@ -23,6 +23,8 @@ use App\Http\Controllers\PacchettoController;
 Route::get('/agenzie/{id}', [AgenziaController::class, 'read']);
 //GET http://localhost:8000/api/agenzie
 Route::get('/agenzie', [AgenziaController::class, 'readAll']);
+//GET http://localhost:8000/api/listaagenzie
+Route::get('/listaagenzie', [AgenziaController::class, 'listAll']);
 
 //GET http://localhost:8000/api/pacchetti/3
 Route::get('/pacchetti/{id}', [PacchettoController::class, 'read']);
