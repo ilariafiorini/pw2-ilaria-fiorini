@@ -1,0 +1,16 @@
+use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
+
+class ImageSeeder extends Seeder
+{
+    public function run()
+    {
+        $imageUrl = 'https://myphoto.com/image.jpg';
+        $imageData = base64_encode(file_get_contents($imageUrl));
+
+        DB::table('images')->insert([
+            'name' => 'My Image',
+            'data' => $imageData,
+        ]);
+    }
+}
