@@ -14,6 +14,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
-});
+//http://localhost:8000/api
+
+
+//GET http://localhost:8000/api/agenzie/3
+Route::get('/agenzie/{id}', [AgenziaController::class, 'read']);
+//GET http://localhost:8000/api/agenzie
+Route::get('/agenzie', [AgenziaControllerr::class, 'readAll']);
+
+//GET http://localhost:8000/api/pacchetti/3
+Route::get('/pacchetti/{id}', [PacchettoController::class, 'read']);
+//GET http://localhost:8000/api/pacchetti
+Route::get('/pacchetti', [PacchettoController::class, 'readAll']);
