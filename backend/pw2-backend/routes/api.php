@@ -2,6 +2,8 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AgenziaController;
+use App\Http\Controllers\PacchettoController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,7 +22,7 @@ use Illuminate\Support\Facades\Route;
 //GET http://localhost:8000/api/agenzie/3
 Route::get('/agenzie/{id}', [AgenziaController::class, 'read']);
 //GET http://localhost:8000/api/agenzie
-Route::get('/agenzie', [AgenziaControllerr::class, 'readAll']);
+Route::get('/agenzie', [AgenziaController::class, 'readAll']);
 
 //GET http://localhost:8000/api/pacchetti/3
 Route::get('/pacchetti/{id}', [PacchettoController::class, 'read']);
