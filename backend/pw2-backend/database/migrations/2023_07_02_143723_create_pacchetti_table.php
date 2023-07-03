@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('destinazione');
             $table->integer('durata');
             $table->integer('prezzo');
+            $table->foreignIdFor(Agenzia::class);
             $table->timestamps();
         });
     }

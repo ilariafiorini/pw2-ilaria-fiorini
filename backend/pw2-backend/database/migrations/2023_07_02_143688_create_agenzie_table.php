@@ -17,7 +17,6 @@ return new class extends Migration
             $table->string('nome');
             $table->string('indirizzo');
             $table->string('tel');
-            $table->foreignIdFor(Pacchetto::class);
             $table->timestamps();
         });
     }

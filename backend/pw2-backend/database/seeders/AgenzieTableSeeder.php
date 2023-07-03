@@ -16,49 +16,25 @@ class AgenzieTableSeeder extends Seeder
             'nome' => 'Buon Viaggio',
             'indirizzo' => 'via Dal Lavoro, 15, Riccione',
             'tel' => '0541555444',
-            'pacchetto_id' => '1',
         ]);
-        Agenzia::create([
-            'nome' => 'Buon Viaggio',
-            'indirizzo' => 'via Dal Lavoro, 15, Riccione',
-            'tel' => '0541555444',
-            'pacchetto_id' => '5',
-        ]);
+
+
         Agenzia::create([
             'nome' => 'Arcobaleno',
             'indirizzo' => 'via Lorenzo il Magnifico, 1600, Firenze',
             'tel' => '3383383389',
-            'pacchetto_id' => '2',
         ]);
-        Agenzia::create([
-            'nome' => 'Arcobaleno',
-            'indirizzo' => 'via Lorenzo il Magnifico, 1600, Firenze',
-            'tel' => '3383383389',
-            'pacchetto_id' => '6',
-        ]);
+
         Agenzia::create([
             'nome' => 'Si Vacanze',
-            'indirizzo' => 'viale Lavatoio, 72, Cesena ',
+            'indirizzo' => 'viale Lavatoio, 42, Cesena',
             'tel' => '3339555444',
-            'pacchetto_id' => '3',
         ]);
-        Agenzia::create([
-            'nome' => 'Si Vacanze',
-            'indirizzo' => 'viale Lavatoio, 72, Cesena ',
-            'tel' => '3339555444',
-            'pacchetto_id' => '4',
-        ]);
-        Agenzia::create([
-            'nome' => 'Si Vacanze',
-            'indirizzo' => 'viale Lavatoio, 72, Cesena ',
-            'tel' => '3339555444',
-            'pacchetto_id' => '8',
-        ]);
+
         Agenzia::create([
             'nome' => 'Mare e Monti',
             'indirizzo' => 'largo Bonaparte, 72, Cattolica',
             'tel' => '0541555999',
-            'pacchetto_id' => '7',
         ]);
     }
 }
